@@ -1,0 +1,27 @@
+/* components/Banner.module.css */
+.sliderContainer {
+    max-width: 100%; /* Adjust max-width as needed */
+    max-height: 400px; /* Adjust max-height as needed */
+    margin: 3px auto;
+    
+}
+
+/* Customize styles as needed */
+
+.slick-prev,
+.slick-next {
+    font-size: 24px; /* Adjust font size as needed */
+    color: black; /* Set the color to black */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #333; /* Adjust hover color as needed */
+}
+
+/* Hide buttons on smaller screens */
+@media (max-width: 767px) {
+    .slick-slider.slick-initialized {
+        overflow: hidden;
+    }
+}

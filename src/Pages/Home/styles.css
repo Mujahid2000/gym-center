@@ -1,0 +1,132 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.program-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+}
+
+.program-container {
+  background-color: #000;
+  color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.mySwiper {
+  padding: 20px 0;
+}
+
+.slide-content {
+  background-color: #040000;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  height: 36px;
+  width: 36px;
+  margin-bottom: 10px;
+}
+
+.fill-hug {
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fill-hug:hover {
+  background-color: #0056b3;
+}
+
+.custom-swiper {
+  padding-bottom: 50px !important; /* Adds space for pagination */
+  overflow: hidden !important; /* Ensures pagination is visible */
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -10px !important; /* Moves pagination below cards */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: #06F !important; /* Custom bullet color (blue) */
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 0.7 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #06F !important; /* Darker blue for active bullet */
+  opacity: 1 !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, 325px);
+  left: 50%;
+  width: 100%;
+}
+
+
+.swiper-pagination-bullet-active{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 10px 10px 10px 10px;
+  transition-duration: calc(auto);
+  width: 1.5rem;
+}
