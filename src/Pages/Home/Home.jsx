@@ -10,12 +10,13 @@ import Program from "./Program";
 import FitnessPlan from "./FitnessPlan";
 import Pricing from "./Pricing";
 import Review from "./Review";
+import { Lenis } from "lenis/react";
 
 
 
 const Home = () => {
     return (
-        <div >
+        <Lenis root >
             <Helmet>
                 <title>Home</title>
             </Helmet>
@@ -26,7 +27,7 @@ const Home = () => {
             <Review/>
              <Subscription></Subscription>
             
-        </div>
+        </Lenis>
     );
 };
 

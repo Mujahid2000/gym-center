@@ -17,16 +17,7 @@ const { user } = useContext(AuthContext);
     const email = formData.get("email");
 
     // Validate if name and email are present
-    if (!name || !email || !user) {
-      Swal.fire({
-        position: "top-end",
-        icon: "error",
-        title: "Please enter your name and email",
-        showConfirmButton: false,
-        timer: 1500,
-      });
-      return;
-    }
+    
 
     console.log({
       name: name,
